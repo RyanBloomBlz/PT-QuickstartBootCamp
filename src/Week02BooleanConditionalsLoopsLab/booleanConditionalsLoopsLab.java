@@ -28,3 +28,5 @@ public class booleanConditionalsLoopsLab {
 
 		}
 }
+
+// There was a whole lesson here, but I wanted to test something out real quick (above). I pasted that in, and CTRL+Z'd after I tested it out. For whatever reason, Eclipse did not save my CTRL+Z.'
