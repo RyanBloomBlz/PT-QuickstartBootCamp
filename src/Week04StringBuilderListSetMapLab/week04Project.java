@@ -12,15 +12,15 @@ public class week04Project {
 	
 	// 1. Create an array of int called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 		
-		int[] ages = new int[8];
-		ages[0] = 3;
-		ages[1] = 9;
-		ages[2] = 23;
-		ages[3] = 64;
-		ages[4] = 2;
-		ages[5] = 8;
-		ages[6] = 28;
-		ages[7] = 93;
+		int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
+		//ages[0] = 3;
+		//ages[1] = 9;
+		//ages[2] = 23;
+		//ages[3] = 64;
+		//ages[4] = 2;
+		//ages[5] = 8;
+		//ages[6] = 28;
+		//ages[7] = 93;
 	
 		// a. Programmatically subtract the value of the first element in the array from the value in the last 
 		// element of the array (i.e. do not use ages[7] in your code). Print the result to the console.  
