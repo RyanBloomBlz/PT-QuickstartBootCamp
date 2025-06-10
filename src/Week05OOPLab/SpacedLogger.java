@@ -1,6 +1,6 @@
 package Week05OOPLab;
 
-public class SpacedLogger {
+public class SpacedLogger implements Logger {
 	String input;
 	
 	SpacedLogger(String input) {
@@ -30,6 +30,18 @@ public class SpacedLogger {
 			System.out.print(" ");
 		}
 		System.out.print("\r");
+	}
+
+	@Override
+	public void log(String log) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void error(String error) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

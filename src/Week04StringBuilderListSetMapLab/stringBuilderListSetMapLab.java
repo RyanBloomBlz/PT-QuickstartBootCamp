@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -38,7 +39,7 @@ public class stringBuilderListSetMapLab {
 		// 2. List of String:
 		//		a. Create a list of Strings 
 		//		b. Add 5 Strings to it, each with a different length
-		ArrayList<String> games = new ArrayList<String>();
+		List<String> games = new LinkedList<String>();
 		games.add("Super Mario Bros. 3");
 		games.add("Sonic Adventure");
 		games.add("NiGHTS into Dreams");
@@ -283,11 +284,11 @@ public class stringBuilderListSetMapLab {
 
 	
 	// Method 5:
-	public static void commaCat(ArrayList<String> str) {
+	public static void commaCat(List<String> games) {
 		StringBuilder glue = new StringBuilder();
-		for (int i = 0; i <= str.size() - 1; i++) {
-			glue.append(str.get(i));
-			if (i < str.size() - 1) {
+		for (int i = 0; i <= games.size() - 1; i++) {
+			glue.append(games.get(i));
+			if (i < games.size() - 1) {
 				glue.append(',');
 				glue.append(' ');
 			}
@@ -297,34 +298,34 @@ public class stringBuilderListSetMapLab {
 	
 	
 	// Method 4:
-	public static void flipFlop(ArrayList<String> str) {
+	public static void flipFlop(List<String> games) {
 		List<String> flip = new ArrayList<String>();
 
-		String first = str.get(0);
-		String last = str.get(str.size() - 1);
+		String first = games.get(0);
+		String last = games.get(games.size() - 1);
 		
-		for (int i = 0; i < str.size(); i++) {
-			flip.add(str.get(i));
+		for (int i = 0; i < games.size(); i++) {
+			flip.add(games.get(i));
 		}
 		
 		flip.set(0, last);
 		flip.set(flip.size() - 1, first);
 		
-		System.out.println("Before: " + str);
+		System.out.println("Before: " + games);
 		System.out.println("After: " + flip);
 	}
 	
 	
 	// Method 3:
-	public static void shortestGame(ArrayList<String> str) {
-		int check = str.get(0).length();
+	public static void shortestGame(List<String> games) {
+		int check = games.get(0).length();
 		StringBuilder gamename = new StringBuilder();
 		
-		for (int i = 0; i < str.size(); i++) {
-			if (str.get(i).length() < check) {
-				check = str.get(i).length();
-				gamename.delete(0, str.get(i).length() + 1); // This is almost certainly unnecessary, but I want it.
-				gamename.append(str.get(i));
+		for (int i = 0; i < games.size(); i++) {
+			if (games.get(i).length() < check) {
+				check = games.get(i).length();
+				gamename.delete(0, games.get(i).length() + 1); // This is almost certainly unnecessary, but I want it.
+				gamename.append(games.get(i));
 			}
 		}
 		System.out.println("Shortest Name: " + gamename + " (" + check + " letters)");
