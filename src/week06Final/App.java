@@ -64,7 +64,6 @@ public class App {
 		
 		System.out.print("Are you ready to begin? Type Y/N: ");
 		String choice = userEntry.nextLine().toLowerCase(); // Get input. This could probably be a char, but I think a string is fine because...
-		System.out.println(choice);
 		if (choice.equals("n") || choice.equals("no")) { // We can check for people who type the full word out.
 			System.out.print("Bummer, dude. Run the program again to play the game.");
 		} else if (choice.equals("y") || choice.equals("yes")) { 
